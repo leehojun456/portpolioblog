@@ -13,7 +13,7 @@
     </div>
 </a>
 
-<a href="/" class="flex flex-col fixed top-0 bottom-0 right-24 justify-center h-full"> 
+<a href="/about" class="flex flex-col fixed top-0 bottom-0 right-24 justify-center h-full"> 
     <div class="text-gray-500 text-2xl select-none tracking-[1em]">
         <p class="border-l-4 p-4 border-indigo-200 hover:border-indigo-600" style="writing-mode: vertical-rl; text-orientation: upright; text-indent: 1em;">ABOUT</p>
     </div>
