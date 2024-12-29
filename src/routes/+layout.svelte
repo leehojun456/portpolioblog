@@ -7,5 +7,6 @@
 	<a href="/"><ion-icon name="home-outline">HOME</ion-icon></a>
 	<a href="/login"><ion-icon name="log-in-outline">LOGIN</ion-icon></a>
 </nav>
-
-{@render children()}
+<div class="rounded-lg p-4 flex flex-col items-center justify-center w-dvw h-dvh align-middle">
+	{@render children()}
+</div>
