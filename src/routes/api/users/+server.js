@@ -1,11 +1,17 @@
 import prisma from '$lib/prisma';
 
 export async function POST({ request }) {
-  const { name, email } = await request.json();
+  const { name, email, password } = await request.json();
+  
+  const userData = {
+    name: name || null,
+    email: email || null,
+    password: password || null,
+  };
 
   try {
     const user = await prisma.user.create({
-      data: { name, email }
+      data: userData
     });
     return new Response(JSON.stringify(user), { status: 201 });
   } catch (error) {

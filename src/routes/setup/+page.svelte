@@ -22,21 +22,22 @@
   
 
 
-    <form class="flex flex-col gap-4 bg-white p-4 rounded-lg shadow-lg w-96">
+    <form class="flex flex-col gap-4 bg-white p-4 rounded-lg shadow-lg w-96" on:submit|preventDefault={saveUser}>
         <div class="flex justify-between items-center text-2xl text-center">
             <h1 class="font-bold text-indigo-600 select-none">SET UP</h1>
             <a href="/" class="flex flex-col justify-center"><ion-icon name="arrow-back-outline">BACK</ion-icon></a>
         </div>
         <label name="email">
-            <input type="email" class="w-full p-2 border border-gray-300 rounded-lg mt-2" placeholder="EMAIL" bind:value={email}/>
+            <input type="email" class="w-full p-2 border border-gray-300 rounded-lg mt-2" placeholder="EMAIL" bind:value={email} required/>
             </label>
         <label name="password">
-            <input type="password" class="w-full p-2 border border-gray-300 rounded-lg mt-2" placeholder="PASSWORD" bind:value={password}/>
+            <input type="password" class="w-full p-2 border border-gray-300 rounded-lg mt-2" placeholder="PASSWORD" bind:value={password} required/>
         </label>
         <label name="name">
-            <input type="text" class="w-full p-2 border border-gray-300 rounded-lg mt-2" placeholder="NAME" bind:value={name}/>
+            <input type="text" class="w-full p-2 border border-gray-300 rounded-lg mt-2" placeholder="NAME" bind:value={name} required/>
         </label>
         <div>
             <button class="w-full p-2 bg-indigo-600 text-white rounded-lg mt-2" type="submit">CORMFIRM</button>
         </div>
     </form>
+    <pre>name = {name}</pre>

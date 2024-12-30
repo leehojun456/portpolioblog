@@ -1,6 +1,6 @@
 import { redirect } from '@sveltejs/kit';
 import prisma from '$lib/prisma';
-/*
+
 export async function load() {
   // User 테이블에서 사용자 정보가 있는지 확인
   const users = await prisma.user.findMany();
@@ -15,4 +15,3 @@ export async function load() {
     users
   };
 }
-*/
